@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Consultas App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Registrar</a>
+        </nav>
+    </header>
+<main>
+    <div id="stage_email">
+        <input type="email" id="email" placeholder="Seu email">
+        <button id="btnSend">Recuperar Senha</button>
+    </div>
+
+    <div id="stage_reset" style="display:none;">
+        <input type="password" id="new_password" placeholder="Nova senha">
+        <button id="btnReset">Redefinir Senha</button>
+    </div>
+
+    <p id="msg"></p>
+</main>
+<script src="js/api_config.js"></script>
+<script src="js/pass_recovery.js?v=20112025"></script>
+
+
+   
+
+</body>
+</html>
