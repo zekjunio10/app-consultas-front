@@ -1,0 +1,33 @@
+/* responsive.css - ajustes para mobile */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header, nav, main, footer {
+        padding: 10px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .consulta-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    button {
+        width: 100%;
+    }
+}
