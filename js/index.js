@@ -55,7 +55,7 @@ function renderApresentacao() {
 async function loadCategorias() {
   const container = document.getElementById("categorias");
   try {
-    const res = await fetch(`${API_BASE_URL}/categorias/list`);
+    const res = await fetch(`${API_BASE_URL}/categorias/list.php`);
     const data = await res.json();
 
     if (data.status !== "success" || !Array.isArray(data.data)) {
@@ -88,7 +88,7 @@ async function loadConsultas(categoriaId, categoriaNome) {
   container.innerHTML = `<p>Carregando consultas de ${categoriaNome}...</p>`;
 
   try {
-    const res = await fetch(`${API_BASE_URL}/consultas/list?categoria_id=${categoriaId}`);
+    const res = await fetch(`${API_BASE_URL}/consultas/list.php?categoria_id=${categoriaId}`);
     const data = await res.json();
 
     if (data.status !== "success" || !Array.isArray(data.data)) {
